@@ -1,23 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    color: #28352c;
-    background: #f5f8f4;
+    color: #333333;
+    background: #ffffff;
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 h1,
 h2,
 h3 {
-    color: #174b2b;
+    color: #24512e;
 }
 
 .blog-nav,
 .site-footer {
     color: #ffffff;
-    background: #174b2b;
+    background: #24512e;
 }
 
 .blog-nav .navbar-brand,
@@ -25,116 +29,92 @@ h3 {
     color: #ffffff;
 }
 
-.blog-nav .nav-link:hover,
-.blog-nav .nav-link:focus {
-    color: #d8edce;
-}
-
 .hero-section {
-    position: relative;
-    display: flex;
-    min-height: 300px;
-    align-items: center;
-    overflow: hidden;
-    background: #315f3c;
+    background: #f3f6f2;
 }
 
 .hero-image {
-    position: absolute;
+    display: block;
     width: 100%;
-    height: 100%;
+    height: 220px;
     object-fit: cover;
-    inset: 0;
 }
 
 .hero-overlay {
-    position: relative;
-    width: 100%;
-    padding: 58px 0;
-    color: #ffffff;
-    background: linear-gradient(90deg, rgb(12 42 23 / 78%), rgb(12 42 23 / 26%));
+    padding: 20px 0;
 }
 
 .hero-overlay h1 {
     max-width: 680px;
-    margin-bottom: 12px;
-    color: #ffffff;
-    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 10px;
+    color: #24512e;
+    font-size: 2rem;
 }
 
 .hero-overlay p {
     max-width: 640px;
     margin-bottom: 0;
-    font-size: 1.1rem;
 }
 
 .page-content {
     flex: 1;
-    padding-top: 36px;
-    padding-bottom: 40px;
+    padding-top: 28px;
+    padding-bottom: 32px;
 }
 
 .section-heading {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .section-heading h2,
 .content-box h2 {
-    margin-bottom: 8px;
-    font-size: 1.6rem;
+    margin-bottom: 6px;
+    font-size: 1.5rem;
 }
 
 .section-heading p {
     margin-bottom: 0;
-    color: #526254;
 }
 
 .blog-card {
     overflow: hidden;
-    border: 1px solid #dce6d9;
-    border-radius: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
 }
 
 .blog-card .card-img-top {
     width: 100%;
-    height: 190px;
+    height: 180px;
     object-fit: cover;
 }
 
 .blog-card .card-title {
-    color: #174b2b;
+    color: #24512e;
 }
 
 .blog-card .card-text {
-    color: #4d5c4e;
+    color: #444444;
 }
 
 .btn-outline-success {
-    --bs-btn-color: #1d6535;
-    --bs-btn-border-color: #1d6535;
-    --bs-btn-hover-bg: #1d6535;
-    --bs-btn-hover-border-color: #1d6535;
-    --bs-btn-active-bg: #174b2b;
-    --bs-btn-active-border-color: #174b2b;
+    --bs-btn-color: #24512e;
+    --bs-btn-border-color: #24512e;
+    --bs-btn-hover-bg: #24512e;
+    --bs-btn-hover-border-color: #24512e;
 }
 
 .supporting-sections {
-    margin-top: 34px;
+    margin-top: 28px;
 }
 
 .content-box {
-    padding: 22px;
+    padding: 18px;
     background: #ffffff;
-    border: 1px solid #dce6d9;
-    border-radius: 8px;
+    border: 1px solid #cccccc;
 }
 
 .category-list {
     padding-left: 20px;
-}
-
-.category-list li {
-    margin-bottom: 5px;
 }
 
 .site-footer {
@@ -156,20 +136,11 @@ h3 {
         padding-left: 0;
     }
 
-    .hero-section {
-        min-height: 260px;
-    }
-
-    .hero-overlay {
-        padding: 42px 0;
-    }
-
-    .page-content {
-        padding-top: 28px;
-        padding-bottom: 30px;
+    .hero-image {
+        height: 180px;
     }
 
     .blog-card .card-img-top {
-        height: 210px;
+        height: 200px;
     }
 }

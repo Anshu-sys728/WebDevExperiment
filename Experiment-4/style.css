@@ -1,12 +1,11 @@
-/* Basic styling keeps the semantic content easy to read. */
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    color: #263238;
-    background: #f4f7f8;
+    color: #333333;
+    background: #ffffff;
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
@@ -14,9 +13,9 @@ body {
 .page-header,
 .main-nav,
 footer {
-    padding: 18px max(6%, calc((100% - 900px) / 2));
+    padding: 16px 6%;
     color: #ffffff;
-    background: #214e5b;
+    background: #24515c;
 }
 
 .page-header h1 {
@@ -26,10 +25,10 @@ footer {
 .main-nav {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background: #173a44;
+    gap: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: #193d46;
 }
 
 .main-nav a {
@@ -37,24 +36,24 @@ footer {
 }
 
 .content-section {
-    width: min(900px, 88%);
+    width: 88%;
+    max-width: 900px;
     margin: 24px auto;
-    padding: 24px;
-    background: #ffffff;
-    border-radius: 6px;
+    padding: 16px 0;
+    border-bottom: 1px solid #dddddd;
 }
 
 .content-section h2 {
     margin-top: 0;
-    color: #214e5b;
+    color: #24515c;
 }
 
 .content-section img {
     display: block;
-    width: min(100%, 650px);
+    width: 100%;
+    max-width: 650px;
     height: auto;
-    margin-top: 18px;
-    border-radius: 4px;
+    margin-top: 16px;
 }
 
 footer p {
@@ -63,7 +62,12 @@ footer p {
 
 @media (max-width: 520px) {
     .page-header,
+    .main-nav {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
     .content-section {
-        padding: 20px;
+        width: 90%;
     }
 }

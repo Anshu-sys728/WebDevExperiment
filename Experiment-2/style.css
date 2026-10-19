@@ -1,31 +1,31 @@
-/* Additional styles for the Bootstrap portfolio layout. */
 body {
-    color: #263238;
+    color: #333333;
     font-family: Arial, sans-serif;
 }
 
 .portfolio-nav,
 footer {
-    background-color: #17324d;
+    color: #ffffff;
+    background: #243b53;
 }
 
 .intro-section {
-    padding: 64px 0;
-    color: #ffffff;
-    background-color: #276678;
+    padding: 48px 0;
+    color: #243b53;
+    background: #f2f4f5;
 }
 
 .intro-section h1 {
-    font-size: clamp(2rem, 5vw, 3rem);
+    font-size: 2.3rem;
 }
 
 .section-space {
-    padding-top: 36px;
-    padding-bottom: 36px;
+    padding-top: 28px;
+    padding-bottom: 28px;
 }
 
 .section-space h2 {
-    color: #17324d;
+    color: #243b53;
 }
 
 .contact-form {
@@ -33,5 +33,11 @@ footer {
 }
 
 footer {
-    color: #ffffff;
+    padding: 14px 0;
+}
+
+@media (max-width: 575.98px) {
+    .intro-section {
+        padding: 36px 0;
+    }
 }
