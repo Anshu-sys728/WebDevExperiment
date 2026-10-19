@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Look up current weather for a city using the Open-Meteo API.">
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="weather-card">
+        <h1>City Weather</h1>
+        <p>Find current weather using a city name.</p>
+        <form id="weatherForm">
+            <label for="cityInput">City name</label>
+            <div class="search-row">
+                <input id="cityInput" name="city" type="text" placeholder="For example, London" required>
+                <button type="submit">Search</button>
+            </div>
+        </form>
+        <p id="status" class="status" role="status" aria-live="polite"></p>
+        <section id="weatherResult" class="weather-result" aria-live="polite"></section>
+    </main>
+</body>
+</html>

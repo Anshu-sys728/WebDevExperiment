@@ -1,0 +1,85 @@
+/* Simple styles for a readable, responsive static page. */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #243247;
+    background: #f4f7fb;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.site-header {
+    padding: 16px 6%;
+    background: #183153;
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.navigation a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navigation a:hover,
+.navigation a:focus {
+    text-decoration: underline;
+}
+
+.hero,
+.content-section {
+    width: min(900px, 88%);
+    margin: 32px auto;
+    padding: 28px;
+    background: #ffffff;
+    border-radius: 8px;
+}
+
+.hero {
+    padding: 56px 28px;
+    text-align: center;
+}
+
+.hero h1 {
+    margin-top: 0;
+    color: #183153;
+}
+
+.button-link {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 16px;
+    color: #ffffff;
+    background: #1769aa;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.button-link:hover,
+.button-link:focus {
+    background: #104c7d;
+}
+
+footer {
+    padding: 16px;
+    color: #ffffff;
+    background: #183153;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 520px) {
+    .hero,
+    .content-section {
+        padding: 22px;
+    }
+}

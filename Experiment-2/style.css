@@ -1,0 +1,37 @@
+/* Additional styles for the Bootstrap portfolio layout. */
+body {
+    color: #263238;
+    font-family: Arial, sans-serif;
+}
+
+.portfolio-nav,
+footer {
+    background-color: #17324d;
+}
+
+.intro-section {
+    padding: 64px 0;
+    color: #ffffff;
+    background-color: #276678;
+}
+
+.intro-section h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.section-space {
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+.section-space h2 {
+    color: #17324d;
+}
+
+.contact-form {
+    max-width: 640px;
+}
+
+footer {
+    color: #ffffff;
+}

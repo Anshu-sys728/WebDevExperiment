@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple to-do list for adding and deleting tasks.">
+    <title>Dynamic To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="todo-card">
+        <h1>My To-Do List</h1>
+        <p>Add a task, then remove it when it is finished.</p>
+        <form id="taskForm">
+            <label for="taskInput">New task</label>
+            <div class="input-row">
+                <input id="taskInput" name="task" type="text" placeholder="For example, read a chapter" required>
+                <button type="submit">Add Task</button>
+            </div>
+        </form>
+        <p id="message" class="message" aria-live="polite"></p>
+        <ul id="taskList" aria-label="Tasks"></ul>
+    </main>
+</body>
+</html>

@@ -1,0 +1,107 @@
+/* Keep the task list simple and usable on narrow screens. */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    place-items: center;
+    color: #243247;
+    background: #eef3f8;
+    font-family: Arial, sans-serif;
+}
+
+.todo-card {
+    width: min(100%, 520px);
+    padding: 28px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(25, 45, 70, 0.12);
+}
+
+h1 {
+    margin-top: 0;
+    color: #183153;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.input-row {
+    display: flex;
+    gap: 8px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 10px;
+    border: 1px solid #9aa9b8;
+    border-radius: 4px;
+    font: inherit;
+}
+
+button {
+    padding: 10px 14px;
+    color: #ffffff;
+    background: #1769aa;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font: inherit;
+}
+
+button:hover,
+button:focus {
+    background: #104c7d;
+}
+
+.message {
+    min-height: 1.5em;
+    color: #8a2d2d;
+}
+
+#taskList {
+    display: grid;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#taskList li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px;
+    background: #f2f6fa;
+    border-radius: 4px;
+    overflow-wrap: anywhere;
+}
+
+.delete-button {
+    flex: 0 0 auto;
+    background: #a63232;
+}
+
+.delete-button:hover,
+.delete-button:focus {
+    background: #7d2020;
+}
+
+@media (max-width: 420px) {
+    .todo-card {
+        padding: 20px;
+    }
+
+    .input-row {
+        flex-direction: column;
+    }
+}

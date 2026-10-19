@@ -1,0 +1,104 @@
+/* Simple responsive home page for the six lab experiments. */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    color: #263247;
+    background: #f3f5fa;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.page-header {
+    padding: 36px 20px;
+    color: #ffffff;
+    background: #263d63;
+    text-align: center;
+}
+
+.page-header h1 {
+    margin: 0 0 8px;
+    font-size: 2rem;
+}
+
+.page-header p {
+    max-width: 620px;
+    margin: 8px auto;
+}
+
+.page-header a,
+.page-footer a {
+    color: inherit;
+}
+
+.experiments {
+    display: grid;
+    width: min(100% - 40px, 960px);
+    margin: 24px auto;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.experiment-card {
+    min-height: 174px;
+    padding: 16px;
+    background: #ffffff;
+    border: 1px solid #e1e5ed;
+    border-radius: 7px;
+}
+
+.experiment-card h2 {
+    margin: 0 0 8px;
+    font-size: 1.05rem;
+}
+
+.experiment-card p {
+    margin: 0 0 12px;
+}
+
+.experiment-card a {
+    color: #20558a;
+    font-weight: bold;
+}
+
+.experiment-card a:hover,
+.experiment-card a:focus {
+    color: #123b65;
+}
+
+.page-footer {
+    padding: 8px 20px;
+    text-align: center;
+}
+
+.page-footer p {
+    margin: 0;
+}
+
+@media (max-width: 760px) {
+    .experiments {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 520px) {
+    .page-header {
+        padding: 28px 18px;
+    }
+
+    .page-header h1 {
+        font-size: 1.7rem;
+    }
+
+    .experiments {
+        width: min(100% - 28px, 420px);
+        grid-template-columns: 1fr;
+    }
+
+    .experiment-card {
+        min-height: 0;
+    }
+}

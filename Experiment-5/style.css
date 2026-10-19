@@ -1,0 +1,86 @@
+/* A compact weather card that fits phone screens. */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    place-items: center;
+    color: #213547;
+    background: #e8f2f6;
+    font-family: Arial, sans-serif;
+}
+
+.weather-card {
+    width: min(100%, 460px);
+    padding: 28px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(25, 45, 70, 0.12);
+}
+
+h1 {
+    margin-top: 0;
+    color: #174f69;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.search-row {
+    display: flex;
+    gap: 8px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 10px;
+    border: 1px solid #98aab4;
+    border-radius: 4px;
+    font: inherit;
+}
+
+button {
+    padding: 10px 14px;
+    color: #ffffff;
+    background: #176b8a;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font: inherit;
+}
+
+button:hover,
+button:focus {
+    background: #104d64;
+}
+
+.status {
+    min-height: 1.5em;
+    color: #8a2d2d;
+}
+
+.weather-result {
+    padding-top: 4px;
+}
+
+.weather-result h2 {
+    color: #174f69;
+}
+
+@media (max-width: 420px) {
+    .weather-card {
+        padding: 20px;
+    }
+
+    .search-row {
+        flex-direction: column;
+    }
+}
