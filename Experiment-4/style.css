@@ -36,9 +36,7 @@ footer {
 }
 
 .content-section {
-    width: 88%;
-    max-width: 900px;
-    margin: 24px auto;
+    margin: 24px 6%;
     padding: 16px 0;
     border-bottom: 1px solid #dddddd;
 }
@@ -68,6 +66,7 @@ footer p {
     }
 
     .content-section {
-        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
     }
 }
