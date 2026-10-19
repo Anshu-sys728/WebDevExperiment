@@ -15,12 +15,12 @@ Create a simple, responsive personal portfolio for a second-year B.Tech Data Sci
 - Navigation links to the Home, About, Skills, Projects, and Contact sections
 - About section with a short student introduction
 - Technologies shown as learning and practice areas
-- Three project cards with clearly marked placeholder links
+- Three project cards linking to the portfolio, responsive blog, and weather project pages in this repository
 - Contact form example with a note that it does not send messages
 - Responsive layout for mobile, tablet, and desktop screens
 
 ## Open the website
 
-1. Open the `Portfolio` folder.
+1. Open the `Experiment-1` folder.
 2. Open `index.html` in a web browser, or open it in VS Code and use **Open in Default Browser** if available.
 3. An internet connection is needed to load the Bootstrap stylesheet from its CDN. The rest of the page is made from local HTML and CSS files.
