@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="title">
+  <title id="title">Weather application illustration placeholder</title>
+  <rect width="800" height="450" fill="#eaf1fa"/>
+  <circle cx="600" cy="112" r="78" fill="#f6cf78"/>
+  <path d="M282 320c-43 0-78-34-78-76s35-76 78-76c14-56 65-97 125-97 70 0 127 57 127 127 43 4 77 40 77 84 0 46-37 83-83 83H282z" fill="#ffffff" stroke="#d1e0f0" stroke-width="8"/>
+  <path d="M331 339l-17 38M405 339l-17 38M479 339l-17 38" stroke="#7295bd" stroke-width="12" stroke-linecap="round"/>
+  <path d="M400 124v-34M343 147l-25-25M457 147l25-25" stroke="#e4b64d" stroke-width="10" stroke-linecap="round"/>
+  <rect x="143" y="369" width="514" height="5" rx="2" fill="#c4d5e8"/>
+</svg>

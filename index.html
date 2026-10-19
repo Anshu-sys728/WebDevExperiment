@@ -3,58 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sweta's Web Designing Lab page with links to six HTML, CSS, Bootstrap, and JavaScript experiments.">
+    <meta name="description" content="Sweta's portfolio as a second-year B.Tech Data Science student interested in programming, web development, data science, and AI.">
     <meta name="author" content="Sweta">
-    <title>Sweta | Web Development Lab</title>
+    <title>Sweta | Personal Portfolio</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="page-header">
-        <h1>Web Development Lab</h1>
-        <p>Hi, I'm Sweta. This page brings together my six lab experiments, from a profile page to small interactive web apps.</p>
-        <p class="email-line">Email: <a href="mailto:swetalearn89@gmail.com">swetalearn89@gmail.com</a></p>
+    <header>
+        <nav class="navbar navbar-expand bg-white border-bottom" aria-label="Main navigation">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#home">Sweta</a>
+                <div class="navbar-nav ms-auto flex-row flex-wrap justify-content-end">
+                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#skills">Skills</a>
+                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <main class="experiments" aria-label="Web designing lab experiments">
-        <article class="experiment-card">
-            <h2>Experiment 1: GitHub and GitHub Pages</h2>
-            <p>A simple static webpage and notes on the GitHub workflow for publishing lab work.</p>
-            <a href="Experiment-1/index.html">Open Experiment 1</a>
-        </article>
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-md-7 py-5">
+                        <p class="section-label">HELLO AND WELCOME</p>
+                        <h1>Hi, I'm Sweta</h1>
+                        <p class="hero-intro">
+                            I'm a second-year B.Tech student in Data Science. I enjoy programming
+                            and building for the web, and I'm exploring data science and artificial
+                            intelligence along the way.
+                        </p>
+                        <a class="btn btn-primary" href="#projects">Explore My Projects</a>
+                    </div>
+                    <div class="col-md-5 text-center pb-5 py-md-5">
+                        <img class="profile-photo" src="assets/sweta-profile.png" alt="Portrait of Sweta">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <article class="experiment-card">
-            <h2>Experiment 2: Personal Portfolio</h2>
-            <p>A portfolio with About, Projects, and Contact sections, plus a simple navigation menu.</p>
-            <a href="Experiment-2/index.html">Open Experiment 2</a>
-        </article>
+        <section id="about" class="content-section">
+            <div class="container">
+                <p class="section-label">A LITTLE ABOUT ME</p>
+                <h2>About Me</h2>
+                <div class="row g-4 mt-1">
+                    <div class="col-md-6">
+                        <article class="about-card h-100">
+                            <h3>Education</h3>
+                            <p class="mb-0">I am a second-year B.Tech student in Data Science.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <article class="about-card h-100">
+                            <h3>Interests</h3>
+                            <p class="mb-0">Programming, web development, data science, and artificial intelligence.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <article class="experiment-card">
-            <h2>Experiment 3: To-Do List</h2>
-            <p>Add tasks to a list and remove them with simple JavaScript interactions.</p>
-            <a href="Experiment-3/index.html">Open Experiment 3</a>
-        </article>
+        <section id="skills" class="content-section section-muted">
+            <div class="container">
+                <p class="section-label">TOOLS I'M LEARNING</p>
+                <h2>Skills</h2>
+                <div class="row g-3 mt-1">
+                    <div class="col-6 col-md-4 col-lg-2"><div class="skill-card">Python</div></div>
+                    <div class="col-6 col-md-4 col-lg-2"><div class="skill-card">C++</div></div>
+                    <div class="col-6 col-md-4 col-lg-2"><div class="skill-card">HTML</div></div>
+                    <div class="col-6 col-md-4 col-lg-2"><div class="skill-card">CSS</div></div>
+                    <div class="col-6 col-md-4 col-lg-2"><div class="skill-card">NumPy</div></div>
+                    <div class="col-6 col-md-4 col-lg-2"><div class="skill-card">Pandas</div></div>
+                </div>
+            </div>
+        </section>
 
-        <article class="experiment-card">
-            <h2>Experiment 4: SEO and Accessibility</h2>
-            <p>A semantic webpage demonstrating clear structure, metadata, and accessible navigation.</p>
-            <a href="Experiment-4/index.html">Open Experiment 4</a>
-        </article>
+        <section id="projects" class="content-section">
+            <div class="container">
+                <p class="section-label">SOME THINGS I'VE MADE</p>
+                <h2>Projects</h2>
+                <p class="section-intro">A few practice projects built while learning web development.</p>
+                <div class="row g-4 mt-1">
+                    <div class="col-md-6 col-lg-4">
+                        <article class="project-card h-100">
+                            <img class="project-image" src="assets/project-portfolio.svg" alt="Illustration placeholder for the personal portfolio website">
+                            <div class="project-card-body">
+                                <h3>Personal Portfolio Website</h3>
+                                <p>A simple portfolio-style webpage for introducing myself and sharing practice work.</p>
+                                <p class="placeholder-note">Illustration placeholder — replace with a project screenshot.</p>
+                                <a class="btn btn-outline-primary mt-auto" href="Portfolio/index.html">View Project</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <article class="project-card h-100">
+                            <img class="project-image" src="assets/project-blog.svg" alt="Illustration placeholder for the responsive technology blog">
+                            <div class="project-card-body">
+                                <h3>Responsive Technology Blog</h3>
+                                <p>A Bootstrap blog layout with technology topics, article cards, and a sidebar.</p>
+                                <p class="placeholder-note">Illustration placeholder — replace with a project screenshot.</p>
+                                <a class="btn btn-outline-primary mt-auto" href="Experiment-6/index.html">View Project</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <article class="project-card h-100">
+                            <img class="project-image" src="assets/project-weather.svg" alt="Illustration placeholder for the weather application">
+                            <div class="project-card-body">
+                                <h3>Weather Application</h3>
+                                <p>A small app that looks up current weather information for a city.</p>
+                                <p class="placeholder-note">Illustration placeholder — replace with a project screenshot.</p>
+                                <a class="btn btn-outline-primary mt-auto" href="Experiment-5/index.html">View Project</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <article class="experiment-card">
-            <h2>Experiment 5: Weather App</h2>
-            <p>Search for a city and view its current weather using the Open-Meteo API.</p>
-            <a href="Experiment-5/index.html">Open Experiment 5</a>
-        </article>
-
-        <article class="experiment-card">
-            <h2>Experiment 6: Bootstrap Blog</h2>
-            <p>A responsive blog layout with navigation, posts, a sidebar, and a footer.</p>
-            <a href="Experiment-6/index.html">Open Experiment 6</a>
-        </article>
+        <section id="contact" class="content-section section-muted">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <p class="section-label">GET IN TOUCH</p>
+                        <h2>Contact</h2>
+                        <p>This form is a frontend preview only. It does not send or store messages.</p>
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label" for="name">Name</label>
+                                <input class="form-control" type="text" id="name" name="name" autocomplete="name">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="email">Email</label>
+                                <input class="form-control" type="email" id="email" name="email" autocomplete="email">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="message">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+                            </div>
+                            <button class="btn btn-primary" type="button">Submit</button>
+                            <p class="form-note">Frontend preview only — submitting this form will not send a message.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="page-footer">
-        <p>Web Designing Lab | <a href="mailto:swetalearn89@gmail.com">Contact Sweta</a></p>
+    <footer class="site-footer">
+        <div class="container text-center">
+            <p class="mb-1 fw-bold">Sweta</p>
+            <p class="mb-0">&copy; 2026 Sweta. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
