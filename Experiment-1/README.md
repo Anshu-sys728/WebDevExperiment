@@ -1,26 +1,50 @@
-# My Portfolio
+# Experiment 1: GitHub and GitHub Pages
 
 ## Aim
 
-Create a simple, responsive personal portfolio for a second-year B.Tech Data Science student.
+Create a simple personal homepage and practise using a GitHub repository, branches, merging, and GitHub Pages.
 
-## Technologies used
+## Technologies
 
-- HTML5 for the page structure
-- CSS3 for custom styling and responsive adjustments
-- Bootstrap 5 for the responsive grid and basic form and button styles
+- HTML5
+- CSS3
+- Bootstrap 5
+- Git and GitHub
+- GitHub Pages
 
-## Main features
+## Page contents
 
-- Navigation links to the Home, About, Skills, Projects, and Contact sections
-- About section with a short student introduction
-- Technologies shown as learning and practice areas
-- Three project cards linking to the portfolio, responsive blog, and weather project pages in this repository
-- Contact form example with a note that it does not send messages
-- Responsive layout for mobile, tablet, and desktop screens
+The homepage introduces Sweta as a second-year B.Tech Data Science student. The About Me section lists project names and links to the GitHub repository.
 
-## Open the website
+## Basic Git workflow
 
-1. Open the `Experiment-1` folder.
-2. Open `index.html` in a web browser, or open it in VS Code and use **Open in Default Browser** if available.
-3. An internet connection is needed to load the Bootstrap stylesheet from its CDN. The rest of the page is made from local HTML and CSS files.
+Create a branch, commit a change, and push the branch:
+
+```bash
+git switch -c update-homepage
+git add .
+git commit -m "Update homepage"
+git push -u origin update-homepage
+```
+
+After reviewing the change, merge it into `main`:
+
+```bash
+git switch main
+git pull origin main
+git merge update-homepage
+git push origin main
+```
+
+## Publish with GitHub Pages
+
+1. Push the finished project to the `main` branch on GitHub.
+2. In the repository, open **Settings > Pages**.
+3. Select **Deploy from a branch**, choose `main` and `/(root)`, then save.
+4. When deployment finishes, open the Pages URL and add `/Experiment-1/` to view this page in its folder.
+
+The Pages site must be enabled in repository settings before it can be viewed online.
+
+## Preview locally
+
+Open `index.html` in a web browser. An internet connection is needed to load Bootstrap from its CDN.
