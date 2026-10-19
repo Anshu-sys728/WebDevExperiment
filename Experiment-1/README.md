@@ -1,55 +1,26 @@
-# Experiment 1: GitHub Repository, Branching, Merging, and GitHub Pages
+# My Portfolio
 
 ## Aim
 
-Set up a GitHub repository for a project, create branches, merge changes, and learn how GitHub Pages can host a simple static website.
+Create a simple, responsive personal portfolio for a second-year B.Tech Data Science student.
 
-## Tools and technologies used
+## Technologies used
 
-- HTML5
-- CSS3
-- Git and GitHub
-- GitHub Pages
+- HTML5 for the page structure
+- CSS3 for custom styling and responsive adjustments
+- Bootstrap 5 for the responsive grid and basic form and button styles
 
-## Basic description of the implementation
+## Main features
 
-The project is a small responsive static webpage with a heading, description, navigation links, and content sections. Its HTML and CSS are kept in separate files. The README describes how to create a repository, commit changes, branch, merge, and configure GitHub Pages. No account is accessed and nothing is published automatically.
+- Navigation links to the Home, About, Skills, Projects, and Contact sections
+- About section with a short student introduction
+- Technologies shown as learning and practice areas
+- Three project cards with clearly marked placeholder links
+- Contact form example with a note that it does not send messages
+- Responsive layout for mobile, tablet, and desktop screens
 
-## Main concepts used
+## Open the website
 
-- Static web pages and relative file links
-- Git repositories, commits, branches, and merges
-- Hosting static content with GitHub Pages
-- Responsive CSS and accessible navigation
-
-## Steps to run the project
-
-1. Open `index.html` in a web browser.
-2. To practise Git, open a terminal in the project folder:
-
-```bash
-git init
-git add .
-git commit -m "Create the static lab page"
-git switch -c update-page
-```
-
-3. Edit a file, then stage and commit the change:
-
-```bash
-git add .
-git commit -m "Update the page"
-```
-
-4. Merge the branch into the main branch:
-
-```bash
-git switch main
-git merge update-page
-```
-
-5. To publish manually, push the repository to GitHub and choose **Settings > Pages**, then select the `main` branch and root folder. GitHub Pages provides the published URL after deployment.
-
-## Expected output
-
-A simple page titled “My Web Designing Lab” appears with working navigation links to its sections. It adjusts to narrow screens without horizontal scrolling.
+1. Open the `Portfolio` folder.
+2. Open `index.html` in a web browser, or open it in VS Code and use **Open in Default Browser** if available.
+3. An internet connection is needed to load the Bootstrap stylesheet from its CDN. The rest of the page is made from local HTML and CSS files.
