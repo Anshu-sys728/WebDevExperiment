@@ -1,80 +1,175 @@
-/* Bootstrap handles the grid; these rules add simple page styling. */
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    color: #263238;
-    background: #f4f6f8;
+    color: #28352c;
+    background: #f5f8f4;
     font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    color: #174b2b;
 }
 
 .blog-nav,
-footer {
+.site-footer {
     color: #ffffff;
-    background: #203b53;
+    background: #174b2b;
 }
 
-.welcome {
-    padding: 42px 0;
+.blog-nav .navbar-brand,
+.blog-nav .nav-link {
     color: #ffffff;
-    background: #2b657a;
 }
 
-.welcome h1 {
-    margin-bottom: 10px;
+.blog-nav .nav-link:hover,
+.blog-nav .nav-link:focus {
+    color: #d8edce;
 }
 
-.welcome p {
+.hero-section {
+    position: relative;
+    display: flex;
+    min-height: 300px;
+    align-items: center;
+    overflow: hidden;
+    background: #315f3c;
+}
+
+.hero-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    inset: 0;
+}
+
+.hero-overlay {
+    position: relative;
+    width: 100%;
+    padding: 58px 0;
+    color: #ffffff;
+    background: linear-gradient(90deg, rgb(12 42 23 / 78%), rgb(12 42 23 / 26%));
+}
+
+.hero-overlay h1 {
+    max-width: 680px;
+    margin-bottom: 12px;
+    color: #ffffff;
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.hero-overlay p {
+    max-width: 640px;
     margin-bottom: 0;
+    font-size: 1.1rem;
 }
 
 .page-content {
     flex: 1;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 36px;
+    padding-bottom: 40px;
+}
+
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.section-heading h2,
+.content-box h2 {
+    margin-bottom: 8px;
+    font-size: 1.6rem;
+}
+
+.section-heading p {
+    margin-bottom: 0;
+    color: #526254;
 }
 
 .blog-card {
     overflow: hidden;
+    border: 1px solid #dce6d9;
+    border-radius: 8px;
 }
 
-.blog-card img {
+.blog-card .card-img-top {
     width: 100%;
-    height: 170px;
+    height: 190px;
     object-fit: cover;
 }
 
-.sidebar-box {
-    padding: 20px;
+.blog-card .card-title {
+    color: #174b2b;
+}
+
+.blog-card .card-text {
+    color: #4d5c4e;
+}
+
+.btn-outline-success {
+    --bs-btn-color: #1d6535;
+    --bs-btn-border-color: #1d6535;
+    --bs-btn-hover-bg: #1d6535;
+    --bs-btn-hover-border-color: #1d6535;
+    --bs-btn-active-bg: #174b2b;
+    --bs-btn-active-border-color: #174b2b;
+}
+
+.supporting-sections {
+    margin-top: 34px;
+}
+
+.content-box {
+    padding: 22px;
     background: #ffffff;
-    border: 1px solid #dce3e8;
-    border-radius: 6px;
+    border: 1px solid #dce6d9;
+    border-radius: 8px;
 }
 
-.sidebar-box a {
-    color: #175b87;
+.category-list {
+    padding-left: 20px;
 }
 
-footer {
+.category-list li {
+    margin-bottom: 5px;
+}
+
+.site-footer {
     margin-top: auto;
 }
 
 @media (max-width: 767.98px) {
-    .welcome {
-        padding: 32px 0;
+    .blog-nav .container {
+        align-items: flex-start;
+        flex-direction: column;
     }
 
-    .welcome h1 {
-        font-size: 1.8rem;
+    .blog-nav .navbar-nav {
+        margin-left: 0 !important;
     }
 
-    .blog-card img {
-        height: 200px;
+    .blog-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 0;
     }
-}
 
-@media (min-width: 768px) and (max-width: 991.98px) {
-    .blog-card img {
-        height: 150px;
+    .hero-section {
+        min-height: 260px;
+    }
+
+    .hero-overlay {
+        padding: 42px 0;
+    }
+
+    .page-content {
+        padding-top: 28px;
+        padding-bottom: 30px;
+    }
+
+    .blog-card .card-img-top {
+        height: 210px;
     }
 }

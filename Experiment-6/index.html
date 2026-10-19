@@ -3,98 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A responsive technology blog about technology, programming, and artificial intelligence.">
-    <title>Technology Blog</title>
-    <!-- Bootstrap supplies the responsive grid and navigation components. -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="description" content="Green Earth shares simple ideas about environmental protection, pollution, climate change, and sustainable living.">
+    <title>Green Earth | Environment and Society</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark blog-nav">
-        <div class="container">
-            <a class="navbar-brand" href="#home">Tech Notes</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#blogMenu" aria-controls="blogMenu" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="blogMenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#blogs">Blogs</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                </ul>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark blog-nav" aria-label="Main navigation">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#home">Green Earth</a>
+                <div class="navbar-nav ms-auto flex-row flex-wrap">
+                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#environment">Environment</a>
+                    <a class="nav-link" href="#society">Society</a>
+                    <a class="nav-link" href="#about">About</a>
+                </div>
             </div>
-        </div>
-    </nav>
-
-    <header class="welcome text-center" id="home">
-        <div class="container">
-            <h1>Welcome to Tech Notes</h1>
-            <p>Simple introductions to technology, programming, and artificial intelligence.</p>
-        </div>
+        </nav>
     </header>
 
-    <main class="container page-content" id="blogs">
-        <div class="row g-4">
-            <section class="col-lg-8" aria-label="Latest blog posts">
-                <div class="row g-3">
+    <main>
+        <section class="hero-section" id="home">
+            <img
+                class="hero-image"
+                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&amp;fit=crop&amp;w=1920&amp;q=80"
+                alt="Sunlight filtering through a green forest">
+            <div class="hero-overlay">
+                <div class="container">
+                    <h1>Protect Nature, Improve Society</h1>
+                    <p>Our environment and society are closely connected. Small actions can help protect nature and create a better future for everyone.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="container page-content">
+            <section id="environment" aria-labelledby="posts-heading">
+                <div class="section-heading">
+                    <h2 id="posts-heading">Environment and Society</h2>
+                    <p>Explore ways to care for the places and communities we share.</p>
+                </div>
+                <div class="row g-4">
                     <div class="col-md-4">
                         <article class="card blog-card h-100">
-                            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80"
-                                 class="card-img-top" alt="Close-up of electronic components on a circuit board">
-                            <div class="card-body">
-                                <h2 class="h5 card-title">Technology</h2>
-                                <p class="card-text">Technology helps people communicate, learn, and solve everyday problems.</p>
-                                <a class="btn btn-outline-primary" href="#about">Read</a>
+                            <img
+                                class="card-img-top"
+                                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                                alt="Green trees growing in a healthy forest">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="h5 card-title">Save Our Environment</h3>
+                                <p class="card-text">Learn why protecting natural resources and reducing pollution are important.</p>
+                                <a class="btn btn-outline-success mt-auto align-self-start" href="#about">Read</a>
                             </div>
                         </article>
                     </div>
                     <div class="col-md-4">
                         <article class="card blog-card h-100">
-                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80"
-                                 class="card-img-top" alt="Laptop and notebook on a desk for programming work">
-                            <div class="card-body">
-                                <h2 class="h5 card-title">Programming</h2>
-                                <p class="card-text">Programming gives computers instructions to build useful websites and tools.</p>
-                                <a class="btn btn-outline-primary" href="#about">Read</a>
+                            <img
+                                class="card-img-top"
+                                src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                                alt="Plastic litter collected for recycling">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="h5 card-title">Plastic Pollution</h3>
+                                <p class="card-text">Discover how plastic waste affects oceans, animals, and human life.</p>
+                                <a class="btn btn-outline-success mt-auto align-self-start" href="#about">Read</a>
                             </div>
                         </article>
                     </div>
                     <div class="col-md-4">
-                        <article class="card blog-card h-100">
-                            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
-                                 class="card-img-top" alt="Abstract illustration representing artificial intelligence">
-                            <div class="card-body">
-                                <h2 class="h5 card-title">Artificial Intelligence</h2>
-                                <p class="card-text">Artificial intelligence helps computers perform tasks that usually need human judgment.</p>
-                                <a class="btn btn-outline-primary" href="#about">Read</a>
+                        <article class="card blog-card h-100" id="society">
+                            <img
+                                class="card-img-top"
+                                src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                                alt="Hands holding a young green plant">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="h5 card-title">Environment and Society</h3>
+                                <p class="card-text">Learn how communities can reduce waste, save water, and protect nature.</p>
+                                <a class="btn btn-outline-success mt-auto align-self-start" href="#about">Read</a>
                             </div>
                         </article>
                     </div>
                 </div>
             </section>
 
-            <aside class="col-lg-4">
-                <section class="sidebar-box mb-3" id="about">
-                    <h2 class="h4">About This Blog</h2>
-                    <p class="mb-0">Tech Notes is a student blog sharing short, beginner-friendly introductions to digital topics.</p>
+            <div class="row g-4 supporting-sections">
+                <section class="col-md-7" id="about" aria-labelledby="about-heading">
+                    <div class="content-box h-100">
+                        <h2 id="about-heading">About This Blog</h2>
+                        <p class="mb-0">This blog shares information about environmental issues, society, and simple actions that can help build a cleaner and healthier world.</p>
+                    </div>
                 </section>
-                <section class="sidebar-box">
-                    <h2 class="h4">Categories</h2>
-                    <ul class="mb-0">
-                        <li><a href="#blogs">Technology</a></li>
-                        <li><a href="#blogs">Programming</a></li>
-                        <li><a href="#blogs">Artificial Intelligence</a></li>
-                    </ul>
+                <section class="col-md-5" aria-labelledby="categories-heading">
+                    <div class="content-box h-100">
+                        <h2 id="categories-heading">Categories</h2>
+                        <ul class="category-list mb-0">
+                            <li>Environmental Protection</li>
+                            <li>Pollution</li>
+                            <li>Climate Change</li>
+                            <li>Sustainable Living</li>
+                        </ul>
+                    </div>
                 </section>
-            </aside>
+            </div>
         </div>
     </main>
 
-    <footer class="text-center py-3">
-        <p class="mb-0">Tech Notes | Web Designing Lab</p>
+    <footer class="site-footer text-center py-3">
+        <div class="container">
+            <p class="mb-0">Green Earth | Environment and Society</p>
+        </div>
     </footer>
-
-    <!-- Bootstrap JavaScript enables the collapsible navigation menu. -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

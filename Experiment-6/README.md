@@ -1,33 +1,34 @@
-# Experiment 6: Responsive Blog Website Using Bootstrap and Media Queries
+# Experiment 6: Green Earth — Environment and Society
 
 ## Aim
 
-Build a simple technology blog that adapts to different screen sizes using Bootstrap and CSS media queries.
+Create a beginner-friendly, responsive blog that introduces environmental topics and the connection between people and nature.
 
-## Tools and technologies used
+## Technologies used
 
-- HTML5
-- CSS3
-- Bootstrap 5 CSS and JavaScript from the official jsDelivr CDN
-- Remote images hosted by Unsplash
+- HTML5 for the page structure and content
+- CSS3 for the green-and-white theme and responsive styling
+- Bootstrap 5 CSS from the jsDelivr CDN for the navigation, spacing, cards, and grid
+- Unsplash image URLs for the hero and blog card photographs
 
-## Basic description of the implementation
+## Main features
 
-The page includes a responsive navigation bar, welcome heading, three blog cards, an about section, a categories sidebar, and a footer. Each card includes a relevant image, descriptive alternative text, a short description, and a Read link. Bootstrap grid classes arrange the posts and sidebar.
+- Dark green navigation with links to Home, Environment, Society, and About
+- Environmental hero image with an introductory heading and paragraph
+- Three blog cards about environmental protection, plastic pollution, and society
+- About This Blog and Categories sections
+- Dark green footer that stays at the bottom when the page is short
+- Descriptive alternative text for all images
 
-## Main concepts used
+## Bootstrap grid and media queries
 
-- Bootstrap `container`, `row`, `col-lg-8`, `col-lg-4`, and `col-md-4`
-- Bootstrap navigation bar and cards
-- CSS media queries for tablet and mobile widths
-- Responsive image sizing and descriptive alt text
+Each blog card is placed in a Bootstrap `col-md-4` column inside a `row`. This displays three equal-width cards across on medium and larger screens. Below Bootstrap's medium breakpoint, the columns take the full row width and stack vertically.
 
-## Steps to run the project
+The media query in `style.css` adjusts the navigation layout, hero spacing, card image height, and page padding on smaller screens. The card images use the same height and crop consistently with `object-fit: cover`.
 
-1. Open `index.html` in a web browser with an internet connection.
-2. Bootstrap and the example images load from their CDNs.
-3. Resize the browser to see the navigation menu and content layout adapt.
+## Open the website in a browser
 
-## Expected output
-
-On large screens, the three blog cards appear horizontally in the main content column beside the sidebar. On smaller screens, the cards stack vertically and the navigation menu collapses. The footer stays at the bottom when the page content is short.
+1. Open the `Experiment-6` folder in Visual Studio Code or File Explorer.
+2. Open `index.html` in a web browser (or use **Open with Live Server** if available).
+3. Keep an internet connection available so Bootstrap and the Unsplash images can load.
+4. Resize the browser window to check the desktop, tablet, and mobile layouts.
