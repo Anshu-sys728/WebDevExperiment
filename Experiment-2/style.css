@@ -19,6 +19,14 @@ footer {
     font-size: 2.3rem;
 }
 
+.profile-photo {
+    width: 220px;
+    max-width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border: 1px solid #cccccc;
+}
+
 .section-space {
     padding-top: 28px;
     padding-bottom: 28px;
@@ -39,5 +47,10 @@ footer {
 @media (max-width: 575.98px) {
     .intro-section {
         padding: 36px 0;
+    }
+
+    .profile-photo {
+        width: 180px;
+        height: 220px;
     }
 }
