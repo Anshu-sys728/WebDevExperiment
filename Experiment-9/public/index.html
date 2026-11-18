@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Experiment 9 - User Authentication</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Experiment 9: User Authentication</h1>
+    <p>Create an account or log in to see the protected page.</p>
+    <p id="status" role="status" aria-live="polite"></p>
+
+    <div id="auth-forms" class="forms">
+      <section>
+        <h2>Create account</h2>
+        <form id="register-form">
+          <label>
+            Email
+            <input name="email" type="email" autocomplete="email" required>
+          </label>
+          <label>
+            Password (at least 8 characters)
+            <input name="password" type="password" minlength="8" maxlength="72" autocomplete="new-password" required>
+          </label>
+          <button type="submit">Register</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Log in</h2>
+        <form id="login-form">
+          <label>
+            Email
+            <input name="email" type="email" autocomplete="email" required>
+          </label>
+          <label>
+            Password
+            <input name="password" type="password" autocomplete="current-password" required>
+          </label>
+          <button type="submit">Log in</button>
+        </form>
+      </section>
+    </div>
+
+    <section id="account" hidden>
+      <h2>You are logged in</h2>
+      <p id="account-email"></p>
+      <p>This is a protected area. Your login session is stored in a secure, HTTP-only cookie.</p>
+      <button id="logout-button" type="button">Log out</button>
+    </section>
+  </main>
+</body>
+</html>
