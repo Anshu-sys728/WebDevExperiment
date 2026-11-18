@@ -1,6 +1,6 @@
 # Web Designing Lab
 
-A beginner-friendly collection of eight web designing experiments built with HTML, CSS, Bootstrap, JavaScript, React, and Node.js. Each experiment is a separate folder.
+A beginner-friendly collection of ten web designing experiments built with HTML, CSS, Bootstrap, JavaScript, React, and Node.js. Each experiment is a separate folder.
 
 ## Experiments
 
@@ -12,6 +12,8 @@ A beginner-friendly collection of eight web designing experiments built with HTM
 6. [Responsive Blog Website Using Bootstrap and Media Queries](./Experiment-6/README.md)
 7. [Notes App Using React](./Experiment-7/README.md)
 8. [Book Collection API Using Node.js and Express](./Experiment-8/README.md)
+9. [User Authentication Using Node.js and Express](./Experiment-9/README.md)
+10. [Deploy Static and Dynamic Websites](./Experiment-10/README.md)
 
 ## Technologies used
 
@@ -21,7 +23,8 @@ A beginner-friendly collection of eight web designing experiments built with HTM
 - JavaScript and the Fetch API in Experiments 3 and 5
 - Open-Meteo Geocoding and Forecast APIs in Experiment 5 (no API key required)
 - React and Babel Standalone from their CDNs in Experiment 7
-- Node.js and Express.js in Experiment 8
+- Node.js and Express.js in Experiments 8 and 9
+- Netlify and AWS Elastic Beanstalk deployment configuration in Experiment 10
 
 ## Open the project in VS Code
 
@@ -32,7 +35,7 @@ A beginner-friendly collection of eight web designing experiments built with HTM
 
 ## Run an experiment
 
-Most experiments can be opened in a browser without a build step. Experiments 2 and 6 load Bootstrap from its CDN, and Experiment 7 loads React and Babel from CDNs, so they need an internet connection. Experiment 5 also needs an internet connection to contact the Open-Meteo APIs. Experiment 8 is a Node.js API; see its README for how to install and start it.
+Most experiments can be opened in a browser without a build step. Experiments 2 and 6 load Bootstrap from its CDN, and Experiment 7 loads React and Babel from CDNs, so they need an internet connection. Experiment 5 also needs an internet connection to contact the Open-Meteo APIs. Experiments 8 and 9 are Node.js applications; see their READMEs for how to install and start them. Experiment 10 contains the deployment setup and instructions; live cloud deployments require hosting accounts.
 
 ## GitHub repository and GitHub Pages
 
