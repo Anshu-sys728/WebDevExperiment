@@ -1,6 +1,6 @@
 # Web Designing Lab
 
-A beginner-friendly collection of six web designing experiments built with HTML, CSS, Bootstrap, and JavaScript where needed. Each experiment is a separate, self-contained folder.
+A beginner-friendly collection of seven web designing experiments built with HTML, CSS, Bootstrap, JavaScript, and React where needed. Each experiment is a separate, self-contained folder.
 
 ## Experiments
 
@@ -10,6 +10,7 @@ A beginner-friendly collection of six web designing experiments built with HTML,
 4. [SEO and Accessibility](./Experiment-4/README.md)
 5. [Weather Application Using Fetch API](./Experiment-5/README.md)
 6. [Responsive Blog Website Using Bootstrap and Media Queries](./Experiment-6/README.md)
+7. [Notes App Using React](./Experiment-7/README.md)
 
 ## Technologies used
 
@@ -18,6 +19,7 @@ A beginner-friendly collection of six web designing experiments built with HTML,
 - Bootstrap 5 CDN for basic layout and components in Experiments 2 and 6
 - JavaScript and the Fetch API in Experiments 3 and 5
 - Open-Meteo Geocoding and Forecast APIs in Experiment 5 (no API key required)
+- React and Babel Standalone from their CDNs in Experiment 7
 
 ## Open the project in VS Code
 
@@ -28,7 +30,7 @@ A beginner-friendly collection of six web designing experiments built with HTML,
 
 ## Run an experiment
 
-No build step is needed. Open the experiment folder and double-click its `index.html` file, or right-click the file in VS Code and choose **Open in Default Browser** if that option is available. Experiments 2 and 6 load Bootstrap from its CDN and need an internet connection. Experiment 5 also needs an internet connection to contact the Open-Meteo APIs. The other experiments work as local static pages.
+No build step is needed. Open the experiment folder and double-click its `index.html` file, or right-click the file in VS Code and choose **Open in Default Browser** if that option is available. Experiments 2 and 6 load Bootstrap from its CDN, and Experiment 7 loads React and Babel from CDNs, so they need an internet connection. Experiment 5 also needs an internet connection to contact the Open-Meteo APIs. The other experiments work as local static pages.
 
 ## GitHub repository and GitHub Pages
 
