@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A simple website demonstrating browser caching, minified assets, and lazy-loaded images.">
+    <title>Web Performance | Experiment 11</title>
+    <link rel="stylesheet" href="style.v1.min.css">
+    <script src="script.v1.min.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="#home" aria-label="Web Performance home">Web<span>Perf</span></a>
+        <nav aria-label="Main navigation">
+            <a href="#techniques">Techniques</a>
+            <a class="github-link" href="https://github.com/Anshu-sys728/WebDevExperiment" target="_blank" rel="noopener noreferrer">GitHub repository</a>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="hero">
+            <p class="eyebrow">EXPERIMENT 11 · WEBSITE OPTIMIZATION</p>
+            <h1>A simple site that loads <span>smarter.</span></h1>
+            <p class="intro">Small performance improvements make a better experience. This page demonstrates three practical ways to make a website feel faster.</p>
+            <a class="button" href="#techniques">Explore the techniques <span aria-hidden="true">↓</span></a>
+        </section>
+
+        <section class="techniques" id="techniques" aria-labelledby="techniques-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">THE BASICS</p>
+                    <h2 id="techniques-title">Three ways to speed things up</h2>
+                </div>
+                <button class="text-button" id="tips-button" type="button" aria-expanded="false" aria-controls="tips">Why it matters <span aria-hidden="true">+</span></button>
+            </div>
+            <p class="tips" id="tips" hidden>Cached assets can be reused on return visits. Minified files are smaller to download. Lazy-loaded images wait until they are near the screen.</p>
+
+            <div class="cards">
+                <article class="card">
+                    <span class="number">01</span>
+                    <h3>Cache static files</h3>
+                    <p>Long-lived cache headers let browsers reuse versioned CSS and JavaScript files.</p>
+                    <span class="tag">FASTER REVISITS</span>
+                </article>
+                <article class="card">
+                    <span class="number">02</span>
+                    <h3>Minify CSS &amp; JS</h3>
+                    <p>Compact production assets reduce the amount of code sent to the browser.</p>
+                    <span class="tag">SMALLER FILES</span>
+                </article>
+                <article class="card">
+                    <span class="number">03</span>
+                    <h3>Load images later</h3>
+                    <p>Images below the fold load only as visitors scroll closer to them.</p>
+                    <span class="tag">LESS WORK UP FRONT</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="gallery" aria-labelledby="gallery-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">IMAGE DEMO</p>
+                    <h2 id="gallery-title">Lazy-loaded gallery</h2>
+                </div>
+                <p class="gallery-note">Scroll down to load the images</p>
+            </div>
+            <div class="image-grid">
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&amp;fit=crop&amp;w=900&amp;q=75" alt="Mountain lake surrounded by green hills" width="900" height="620" loading="lazy" decoding="async">
+                    <figcaption>Quiet mornings</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&amp;fit=crop&amp;w=900&amp;q=75" alt="Sunlit countryside with a distant mountain" width="900" height="620" loading="lazy" decoding="async">
+                    <figcaption>Open landscapes</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&amp;fit=crop&amp;w=900&amp;q=75" alt="Lake and mountains beneath a clear sky" width="900" height="620" loading="lazy" decoding="async">
+                    <figcaption>Fresh perspectives</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Experiment 11 · Website optimization</p>
+        <a href="https://github.com/Anshu-sys728/WebDevExperiment" target="_blank" rel="noopener noreferrer">View the GitHub repository <span aria-hidden="true">↗</span></a>
+    </footer>
+</body>
+</html>
