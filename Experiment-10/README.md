@@ -1,49 +1,54 @@
-# Experiment 10: Deploy Static and Dynamic Websites
+# Experiment 10: Static and Dynamic Website Deployment
 
 ## Objective
 
-Prepare the lab portfolio for static hosting on Netlify and the Experiment-9 authentication app for dynamic hosting on AWS Elastic Beanstalk.
+Create a static website for Netlify and a dynamic Node.js feedback app for AWS Elastic Beanstalk.
+
+## Project structure
+
+- `static-site/`: standalone HTML, CSS, and JavaScript website.
+- `dynamic-site/`: Node.js and Express feedback app with health and JSON endpoints.
 
 ## Deployment status
 
-The repository includes the Netlify configuration and deployment instructions. Neither website has been deployed yet: Netlify, AWS, and MongoDB Atlas accounts are not configured. No cloud resources have been created. Continue only if the selected plans and resources remain within your free-tier limit.
+Both apps are implemented and can be tested locally. Live hosting is still pending because Netlify and AWS accounts are not configured. No cloud resources have been created. Use free-tier resources only and stop if a service may incur charges.
 
-## Static website: Netlify
+## Run locally
 
-The static website is the portfolio at the repository root (`index.html`, `style.css`, and `assets/`). The root `netlify.toml` sets the publish directory to `.`; there is no build command.
+Open `static-site/index.html` in a browser to see the static website.
+
+Run the dynamic app on Windows:
+
+```powershell
+cd Experiment-10\dynamic-site
+npm.cmd install
+npm.cmd start
+```
+
+Open `http://localhost:3002`. Submit feedback, then use **Check Server Health** and **View Submitted Feedback (JSON)** to test the dynamic endpoints. Feedback is held in memory and is cleared when the server restarts.
+
+## Deploy the static website to Netlify
+
+The root `netlify.toml` sets `Experiment-10/static-site` as the publish directory. There is no build command.
 
 1. Sign in to Netlify and choose **Add new site > Import an existing project**.
 2. Connect GitHub and select `Anshu-sys728/WebDevExperiment`.
-3. Use the `main` branch. Confirm the publish directory is `.` and leave the build command empty.
-4. Deploy the site and open the Netlify URL to check the portfolio and its project links.
+3. Use the `main` branch. Confirm the publish directory is `Experiment-10/static-site` and leave the build command empty.
+4. Deploy the site and open the Netlify URL to test the button.
 
-Netlify will redeploy when new commits are pushed to the connected branch.
+Netlify can redeploy when new commits are pushed to the connected branch.
 
-## Dynamic website: AWS Elastic Beanstalk
+## Deploy the dynamic app to AWS Elastic Beanstalk
 
-The dynamic website is [Experiment 9](../Experiment-9/README.md), a Node.js and Express authentication app backed by MongoDB. Its server reads `PORT`, `MONGODB_URI`, and `JWT_SECRET` from the environment. `.ebignore` excludes local environment files and installed dependencies from deployment packages.
+The source for the dynamic site is `dynamic-site/`. Its `Procfile` starts the app with `npm start`, and `.ebignore` excludes local environment files and installed dependencies.
 
-### Prerequisites
+1. Sign in to AWS and check the current pricing/free-tier terms before creating any resources. Do not continue if a charge may apply.
+2. Create an Elastic Beanstalk Node.js application/environment using the contents of `Experiment-10/dynamic-site` as the source. Use a supported Node.js platform.
+3. Deploy the application. Open the environment's HTTPS URL.
+4. Submit a feedback entry and verify the success message. Open `/api/health` and `/api/feedback` to verify the JSON responses.
 
-- An AWS account and AWS CLI/Elastic Beanstalk CLI configured for that account.
-- A MongoDB Atlas deployment reachable from the AWS application.
-- A Node.js runtime compatible with the `engines` setting in `Experiment-9/package.json`.
-- Confirmation in the AWS and Atlas pricing pages that the selected resources stay within your free-tier limit. If a cost may apply, stop and get approval before creating resources.
+The feedback app stores entries in memory, so they do not persist across app restarts or multiple instances. A database would be needed for persistent storage.
 
-### Deployment outline
+## Evidence
 
-1. Create a MongoDB Atlas database user and database. Configure network access for the AWS application without allowing access from every IP address.
-2. Create a random JWT secret of at least 32 characters. Keep both the secret and MongoDB connection string private.
-3. In the AWS console, create a Node.js Elastic Beanstalk application/environment using the `Experiment-9` folder as the source.
-4. Configure these environment properties in Elastic Beanstalk; do not put their values in GitHub:
-   - `MONGODB_URI`: the Atlas connection string.
-   - `JWT_SECRET`: the generated random secret.
-   - `NODE_ENV`: `production`.
-5. Deploy the application. Check the environment health and open its HTTPS URL.
-6. Test registration, logout, and login. The app requires its MongoDB connection to be available.
-
-Elastic Beanstalk and MongoDB Atlas settings and pricing can change. Review the current console prompts and costs before creating or updating any resources.
-
-## Verification and evidence
-
-After deployment, record the Netlify site URL, the AWS HTTPS URL, and screenshots showing each site working. These values are intentionally left blank until real deployments are completed; no deployment URL or evidence is claimed in this repository yet.
+After deployment, add the Netlify and AWS URLs and screenshots of both working sites here. No live URLs or deployment evidence are claimed until the services have actually been deployed.

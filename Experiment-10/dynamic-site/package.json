@@ -1,0 +1,16 @@
+{
+  "name": "experiment-10-dynamic-feedback",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A dynamic feedback app for Web Designing Lab Experiment 10",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
