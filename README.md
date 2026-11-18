@@ -1,6 +1,6 @@
 # Web Designing Lab
 
-A beginner-friendly collection of seven web designing experiments built with HTML, CSS, Bootstrap, JavaScript, and React where needed. Each experiment is a separate, self-contained folder.
+A beginner-friendly collection of eight web designing experiments built with HTML, CSS, Bootstrap, JavaScript, React, and Node.js. Each experiment is a separate folder.
 
 ## Experiments
 
@@ -11,6 +11,7 @@ A beginner-friendly collection of seven web designing experiments built with HTM
 5. [Weather Application Using Fetch API](./Experiment-5/README.md)
 6. [Responsive Blog Website Using Bootstrap and Media Queries](./Experiment-6/README.md)
 7. [Notes App Using React](./Experiment-7/README.md)
+8. [Book Collection API Using Node.js and Express](./Experiment-8/README.md)
 
 ## Technologies used
 
@@ -20,6 +21,7 @@ A beginner-friendly collection of seven web designing experiments built with HTM
 - JavaScript and the Fetch API in Experiments 3 and 5
 - Open-Meteo Geocoding and Forecast APIs in Experiment 5 (no API key required)
 - React and Babel Standalone from their CDNs in Experiment 7
+- Node.js and Express.js in Experiment 8
 
 ## Open the project in VS Code
 
@@ -30,7 +32,7 @@ A beginner-friendly collection of seven web designing experiments built with HTM
 
 ## Run an experiment
 
-No build step is needed. Open the experiment folder and double-click its `index.html` file, or right-click the file in VS Code and choose **Open in Default Browser** if that option is available. Experiments 2 and 6 load Bootstrap from its CDN, and Experiment 7 loads React and Babel from CDNs, so they need an internet connection. Experiment 5 also needs an internet connection to contact the Open-Meteo APIs. The other experiments work as local static pages.
+Most experiments can be opened in a browser without a build step. Experiments 2 and 6 load Bootstrap from its CDN, and Experiment 7 loads React and Babel from CDNs, so they need an internet connection. Experiment 5 also needs an internet connection to contact the Open-Meteo APIs. Experiment 8 is a Node.js API; see its README for how to install and start it.
 
 ## GitHub repository and GitHub Pages
 
